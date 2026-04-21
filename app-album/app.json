@@ -1,0 +1,13 @@
+{
+  "app": "app-album",
+  "device": "",
+  "bundleName": "com.zerows.appalbum",
+  "moduleName": "entry",
+  "abilityName": "EntryAbility",
+  "dependsOn": [
+    "app-center"
+  ],
+  "launchTargets": [
+    "app-center"
+  ]
+}

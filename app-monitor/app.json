@@ -1,0 +1,16 @@
+{
+  "app": "app-monitor",
+  "device": "",
+  "bundleName": "com.zerows.appmonitor",
+  "moduleName": "entry",
+  "abilityName": "EntryAbility",
+  "dependsOn": [
+    "app-center",
+    "app-security",
+    "app-hello",
+    "app-medication"
+  ],
+  "launchTargets": [
+    "app-center"
+  ]
+}

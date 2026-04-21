@@ -1,0 +1,9 @@
+{
+  "app": "app-center",
+  "device": "",
+  "bundleName": "com.zerows.appcenter",
+  "moduleName": "entry",
+  "abilityName": "EntryAbility",
+  "dependsOn": [],
+  "launchTargets": []
+}

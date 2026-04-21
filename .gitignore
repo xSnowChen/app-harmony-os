@@ -1,0 +1,49 @@
+# OS / Editor
+.DS_Store
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Local agent state
+.codex/config.toml
+.omc/
+**/.omc/
+
+# Local temporary assets
+.tmp-sfx/
+
+# HarmonyOS / DevEco / Hvigor
+.hvigor/
+.ohos/
+.preview/
+.test/
+.cache/
+build/
+dist/
+**/build/
+**/dist/
+**/.hvigor/
+**/.ohos/
+**/.preview/
+**/.test/
+**/.cache/
+**/.deveco-sdk-shim/
+**/.logs/
+
+# Package manager
+node_modules/
+
+# Logs
+*.log
+/.logs/
+
+# Local configuration files (machine-specific)
+local.properties
+
+# Build profile (machine-specific paths)
+build-profile.json5
+
+# Claude local settings
+.claude/settings.local.json
+**/.claude/settings.local.json

@@ -1,0 +1,25 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/PasswordSetup",
+    "pages/PasswordVerify",
+    "pages/MainPage",
+    "pages/SettingsPage",
+    "pages/PhotosPage",
+    "pages/VideosPage",
+    "pages/GifsPage",
+    "pages/DocsPage",
+    "pages/RecordsPage",
+    "pages/settings/RecycleBinPage",
+    "pages/settings/DuplicateFilesPage",
+    "pages/settings/LargeFilesPage",
+    "pages/settings/CleanTempPage",
+    "pages/settings/BackupDataPage",
+    "pages/settings/IntruderPhotoPage",
+    "pages/settings/PhoneTransferPage",
+    "pages/settings/PasswordSecurityPage",
+    "pages/settings/FaceIdPage",
+    "pages/settings/AppSettingsPage",
+    "pages/settings/LanguageSettingsPage"
+  ]
+}
