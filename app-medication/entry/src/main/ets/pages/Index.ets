@@ -63,6 +63,7 @@ const COLORS: DesignColors = {
 
 @Entry
 @Component
+@Preview
 struct Index {
   private readonly centerApp: TargetApp = {
     id: 'app-center', label: '应用中心',

@@ -1,14 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Hello-Entry" type="HarmonyOSRunConfiguration" factoryName="HarmonyOS App" singleton="true">
-    <option name="DEPLOY" value="true" />
-    <option name="ARTIFACT_NAME" value="" />
-    <option name="PM_INSTALL_OPTION" value="" />
-    <option name="LAUNCH_OPTION" value="default" />
-    <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-    <option name="DEBUGGER_TYPE" value="Auto" />
-    <method v="2">
-      <option name="MakeProject" enabled="true" />
-    </method>
-    <module name="app-hello.entry" />
+  <configuration default="false" name="Hello-Entry" type="HvigorRunConfiguration" factoryName="HvigorRunConfiguration">
+    <option name="applicationParameters" value="assembleApp -p product=default -p buildMode=debug" />
+    <option name="nodeInterpreter" value="$APPLICATION_HOME_DIR$/tools/node/bin" />
+    <option name="scriptFile" value="$APPLICATION_HOME_DIR$/tools/hvigor/bin/hvigorw.js" />
+    <option name="workingDir" value="$PROJECT_DIR$/app-hello" />
+    <envs>
+      <env name="DEVECO_SDK_HOME" value="$PROJECT_DIR$/app-hello/.deveco-sdk-shim" />
+      <env name="OHOS_BASE_SDK_HOME" value="$PROJECT_DIR$/app-hello/.deveco-sdk-shim/HarmonyOS-6.0.2/openharmony" />
+    </envs>
+    <method v="2" />
   </configuration>
 </component>

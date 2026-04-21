@@ -1,5 +1,6 @@
 import router from '@ohos.router';
 
+@Preview
 @Entry
 @Component
 struct GifsPage {

@@ -14,6 +14,7 @@ const COMMAND_OPEN_ENTRY: string = 'open-entry';
 const START_WITHOUT_TIPS_FLAG: number = 0x100000;
 const RETURN_SOUND_FILE: string = 'return.wav';
 
+@Preview
 @Entry
 @Component
 struct Index {

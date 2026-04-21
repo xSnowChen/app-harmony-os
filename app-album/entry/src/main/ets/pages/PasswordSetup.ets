@@ -2,6 +2,7 @@ import common from '@ohos.app.ability.common';
 import { PasswordStore } from '../utils/PasswordStore';
 import router from '@ohos.router';
 
+@Preview
 @Entry
 @Component
 struct PasswordSetup {

@@ -7,6 +7,7 @@ interface MenuItem {
   page: string;
 }
 
+@Preview
 @Entry
 @Component
 struct MainPage {
@@ -24,39 +25,48 @@ struct MainPage {
   }
 
   build() {
-    Column({ space: 0 }) {
+    Column() {
       Grid() {
         ForEach(this.menuItems, (item: MenuItem) => {
           GridItem() {
-            Column({ space: 18 }) {
-              Image(item.icon)
-                .width(88)
-                .height(88)
-                .objectFit(ImageFit.Contain)
+            Column({ space: 6 }) {
+              Column() {
+                Image(item.icon)
+                  .width(64)
+                  .height(64)
+                  .objectFit(ImageFit.Contain)
+              }
+              .width(96)
+              .height(96)
+              .borderRadius(18)
+              .backgroundColor('#EFF6FF')
+              .justifyContent(FlexAlign.Center)
+
               Text(item.label)
-                .fontSize(18)
+                .fontSize(14)
                 .fontWeight(FontWeight.Medium)
-                .fontColor('#111827')
+                .fontColor('#1F2937')
                 .textAlign(TextAlign.Center)
-                .maxLines(2)
+                .maxLines(1)
             }
             .width('100%')
-            .height('100%')
             .justifyContent(FlexAlign.Center)
+            .alignItems(HorizontalAlign.Center)
             .onClick(() => { this.navigateTo(item.page); })
           }
         }, (item: MenuItem) => item.id)
       }
-      .columnsTemplate('1fr 1fr 1fr')
-      .rowsTemplate('1fr 1fr')
-      .rowsGap(0)
-      .columnsGap(0)
+      .columnsTemplate('1fr 1fr')
+      .rowsTemplate('1fr 1fr 1fr')
+      .rowsGap(4)
+      .columnsGap(4)
       .width('100%')
-      .height('100%')
-      .padding({ left: 12, right: 12, top: 18, bottom: 18 })
+      .height('85%')
+      .padding({ left: 16, right: 16 })
     }
     .width('100%')
     .height('100%')
     .backgroundColor('#F8FAFC')
+    .justifyContent(FlexAlign.Center)
   }
 }
